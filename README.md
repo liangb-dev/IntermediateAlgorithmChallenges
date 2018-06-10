@@ -38,5 +38,8 @@ This means each number in the latter half of the sequence has a corresponding 'p
 <br>
 I find the 'predecessor' by first finding the smallest power of 2 that is larger than the inquired index because you need to know how many positions to shift by - 2^(k)/2 - half the lenght the sequence is after it doubled itself. Subtract 2^(k)/2 from the inquired index and you have the first 'predecessor'. Keep iterating the same process (emphasis <strong>smallest power of 2</strong>) until you get to index 0. By keeping count of each time I 'devolved' the sequence, I kenw exactly how many times initial value 0 of index 0 had incremented. That, and modulo(3), then gives will give the final answer. <br>
 <br>
+<h4> Adaptation:</h4> 
+I noticed that the pattern was very recursive so I redid it using recursion in method2(). There I also used modulo(3) to implement the pattern 0-1-2-0 since I hadn't noticed that simple solution in my previous attempt, method1().
+
 
 <h2><a href=src/SumAllNumbersInRange.java>SumAllNumbersInRange</a></h2>
