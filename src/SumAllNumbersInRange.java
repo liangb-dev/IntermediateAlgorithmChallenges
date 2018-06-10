@@ -9,7 +9,10 @@ public class SumAllNumbersInRange extends IntermediateAlgorithm<Integer> {
     }
 
 
+
+
     // Methods
+
     protected Integer method1() {
         int sum = 0;
         int begin;
