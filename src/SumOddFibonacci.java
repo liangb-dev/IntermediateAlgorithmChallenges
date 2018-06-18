@@ -1,14 +1,14 @@
-/*Given a positive integer 'num', return the sum of all odd Fibonacci numbers that are less than or equal to 'num'*/
+/*Given a positive integer 'max', return the sum of all odd Fibonacci numbers that are less than or equal to 'max'*/
 /*The first two numbers in the Fibonacci sequence are 1 and 1. Every additional number in the sequence is the sum
 * of the previous numbers. */
 import java.util.ArrayList;
 
 public class SumOddFibonacci extends IntermediateAlgorithm {
     // fields
-    private final int num;
+    private final int max;
     // constructor
-    SumOddFibonacci(int num) {
-        this.num = num;
+    SumOddFibonacci(int max) {
+        this.max = max;
     }
     // methods
     protected Integer method1() {
@@ -20,7 +20,7 @@ public class SumOddFibonacci extends IntermediateAlgorithm {
         int max = 0;
         int sum = 0;
 
-        while (fibs.get(max) <= num) {
+        while (fibs.get(max) <= this.max) {
             if (fibs.get(max)%2 != 0) {
                 sum += fibs.get(max);
             }
@@ -28,7 +28,7 @@ public class SumOddFibonacci extends IntermediateAlgorithm {
             max++;
         }
 
-        System.out.println("The sum of odd fibonaccis up til " + num + " is: " + sum);
+        System.out.println("The sum of odd fibonaccis up til " + this.max + " is: " + sum);
 
         return sum;
     }
