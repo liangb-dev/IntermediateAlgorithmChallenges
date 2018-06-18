@@ -11,7 +11,7 @@ public class Main {
 
 
         // Testing algorithm DiffTwoArrays
-        IntermediateAlgorithm object = new SortedUnion(arr1,arr2,arr3,arr4);
+        IntermediateAlgorithm object = new SumOddFibonacci(75025);
         object.method(1);
 
     }
